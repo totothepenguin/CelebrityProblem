@@ -1,4 +1,4 @@
-CelebrityProblem:
+Celebrity Problem:
 
 The celebrity problem is a fairly simple problem. There is a party with a group of n people. The celebrity is the one person in the group who knows nobody but is known by everyone else. The goal of the problem is to identify the celebrity by only asking the question: “Does A know B?”
 
