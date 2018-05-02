@@ -6,9 +6,11 @@ public class CelebrityProblem {
         long total_time_BF = 0;
         long total_time_R = 0;
 
-        for (int i = 0; i < 10; i++) {
+        int numTries = 100;
+        int problemSize = 20000;
+        for (int i = 0; i < numTries; i++) {
 
-            CelebrityProblemGenerator party = new CelebrityProblemGenerator(2000);
+            CelebrityProblemGenerator party = new CelebrityProblemGenerator(problemSize);
             int[][] guests = party.getProblem();
 
             long start_time_BF = System.currentTimeMillis();
@@ -31,11 +33,11 @@ public class CelebrityProblem {
 
         }
 
-        double avg_time_BF = total_time_BF/10.00000;
-        System.out.println("The average time taken by the Brute Force Solution for a problem of size " + 2000 + " is " + avg_time_BF + " milliseconds.");
+        double avg_time_BF = total_time_BF/(long)numTries;
+        System.out.println("The average time taken by the Brute Force Solution for a problem of size " + problemSize + " is " + avg_time_BF + " milliseconds.");
 
-        double avg_time_R = total_time_R/10.00000;
-        System.out.println("The average time taken by the Recursive Solution for a problem of size " + 2000 + " is " + avg_time_R + " milliseconds.");
+        double avg_time_R = total_time_R/(long)numTries;
+        System.out.println("The average time taken by the Recursive Solution for a problem of size " + problemSize + " is " + avg_time_R + " milliseconds.");
 
     }
 
