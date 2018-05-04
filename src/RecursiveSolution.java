@@ -1,7 +1,14 @@
 import java.util.ArrayList;
 
+/**
+ * Recursive solution for the celebrity problem
+ *
+ */
 public class RecursiveSolution {
+
+    // a 2D array representing all the guests and who they know
     private int[][] problem;
+    // stores all
     private ArrayList<Integer> guests = new ArrayList<>();
     private int celebrity = -1;
 
