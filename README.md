@@ -31,25 +31,6 @@ Time Comparison:
 
 The CelebrityProblem class compares the time taken by both the solutions to solve the celebrity problem for increasing sizes of the problem. For every problem size, it generates a new celebrity problem for every try, uses both solutions to solve it, records the time taken by each of them, and then doubles the problem size and repeats the process again. The average time taken by both solutions was recorded for  20 tries and problem sizes of 625, 1250, 2500, 5000, 10000 and 20000. Compared to the Brute Force Solution, the Recursive Solution almost always takes more time on average and this time increases by a greater factor as problem size increases. The Brute Force Solution is much faster as recursion makes the program call the function multiple times. 
 
-An example of the results of the time comparison is:
-
-| Problem Size | Brute Force Solution | Recursive  Solution |
-
-|--------------| ---------------------|---------------------|
-
-|      625     |         0 ms         |         0 ms        |
-
-|     1250     |         0 ms         |         0 ms        |
-
-|     2500     |         0 ms         |         0 ms        |
-
-|     5000     |         0 ms         |         1 ms        |
-
-|     10000    |         0 ms         |         6 ms        |
-
-|     20000    |         0 ms         |        22 ms        |
-
-
 
 Future Improvements:
 
