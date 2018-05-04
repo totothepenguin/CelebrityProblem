@@ -37,9 +37,6 @@ public class BruteForceSolution {
         if (celebrity < 0) {
             throw new java.lang.RuntimeException("There is no celebrity!");  // throws exception if no celebrity
         }
-        else {
-            System.out.println("The celebrity is guest number " + celebrity + "!");
-        }
 
         return celebrity;
     }
@@ -48,7 +45,7 @@ public class BruteForceSolution {
      * checks to see if a guest is a celebrity
      * by ensuring the guest does not know anyone else at the party
      *
-     * @param guestNumber
+     * @param guestNumber - identifying number of the guest to be checked
      * @return
      */
     public boolean isCelebrity(int guestNumber) {

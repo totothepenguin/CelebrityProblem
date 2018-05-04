@@ -12,7 +12,7 @@ public class CelebrityProblem {
      */
     public static void main(String[] args){
 
-        int numTries = 10;
+        double numTries = 20.00;
         int problemSize = 625;
         while (problemSize < 20001) {
 
