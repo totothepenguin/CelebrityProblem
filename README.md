@@ -29,7 +29,10 @@ The decrease-by-one solution can be implemented more efficiently using a stack. 
 
 Time Comparison:
 
-The CelebrityProblem class generates a new celebrity problem for every try and then used both solutions to solve it, recording the time taken by each of them. The average time taken by both solutions was recorded for  100 tries. The problem size used was n = 2000. The Recursive Solution took 6.5 milliseconds on average and the Brute Force Solution took 2 milliseconds on average. The Brute Force Solution is much faster as recursion makes the program call the function multiple times. 
+The CelebrityProblem class compares the time taken by both the solutions to solve the celebrity problem for increasing sizes of the problem. For every problem size, it generates a new celebrity problem for every try, uses both solutions to solve it, records the time taken by each of them, and then doubles the problem size and repeats the process again. The average time taken by both solutions was recorded for  20 tries and problem sizes of 625, 1250, 2500, 5000, 10000 and 20000. Compared to the Brute Force Solution, the Recursive Solution almost always takes more time on average and this time increases by a greater factor as problem size increases. The Brute Force Solution is much faster as recursion makes the program call the function multiple times. 
+
+An example of the results of the time comparison is:
+
 
 
 Future Improvements:
